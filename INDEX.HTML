@@ -1,192 +1,312 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  </head>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="#">
-            <img src="https://i0.wp.com/chntrucking.com/wp-content/uploads/2019/11/chn-logo-3.png">
-          </a>
-      
-          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item">
-              Schedule a pick up
-            </a>    
-      
-            <a class="navbar-item">
-              Contact us
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                More
-              </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
-                </a>
-                <a class="navbar-item">
-                  Jobs
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
-                </a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Contact us</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
 
-   <section class="section">
+<nav class="navbar is-dark">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#" style="font-weight:bold;">
+        <img src=" https://i0.wp.com/chntrucking.com/wp-content/uploads/2019/11/chn-logo-3.png"> </a>
+      <span class="navbar-burger burger" data-target="navmenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navmenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="INDEX.HTML" class="navbar-item is-active"> Home </a>
+        <a href="ABOUT.html" class="navbar-item">About</a>
+        <a href="PickUpRequest.html" class="navbar-item">Pick Up Request</a>
+        <a href="Contact.html" class="navbar-item">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script type="text/javascript">
+  (function () {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#' + burger.dataset.target);
+    burger.addEventListener('click', function () {
+      burger.classList.toggle('is-active');
+      nav.classList.toggle('is-active');
+    });
+  })();
+</script>
+
+<body>
+
+  <section class="section">
     <div class="hero is-primary">
-            <figure class="image is-16by9">
-                    <img src="https://i0.wp.com/chntrucking.com/wp-content/uploads/2019/06/logistics-lorry-mountains-93398.jpg">
-                
-                </figure>
-    
-            </div>
-
+      <figure class="image">
+        <img src="slide1.png">
+      </figure>
+    </div>
   </section>
 
   <!--------------------3 middle columns------------------------------------------------------>
 
   <!--------------------------services------------------------------------------------->
-    <div class="columns">
-        <div class="column">
-            <div class="card">
-                <div class="card-content">
-                       <div class="has-text-centered" >                
-                        <div class="icon"> 
-                         <span style="font-size: 48px; color: rgb(255, 73, 103);">
-                         <i class="fas fa-handshake"></i>
-                            </span>
-                         </div>
-                           <h2 class="title">Services</h2>
-                    </div>
-                     <p>Refrigerated transportation is an important aspect of the logistics industry. 
-                        If fresh produce or frozen products are not stored at their ideal temperatures while in transit, or if they do not arrive on time, 
-                        then these products become unfit for public consumption and go to waste. This is why if you are in the food business and your products need 
-                        refrigerated transport, you have to call on experts who take it very seriously.
-                     </p>
-                </div>
-              </div>
+  <div class="columns">
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <div class="has-text-centered">
+            <div class="icon">
+              <span style="font-size: 48px; color: rgb(255, 73, 103);">
+                <i class="fas fa-handshake"></i>
+              </span>
+            </div>
+            <h2 class="title">Services</h2>
+          </div>
+          <p>Refrigerated transportation is an important aspect of the logistics industry.
+            If fresh produce or frozen products are not stored at their ideal temperatures while in transit, or if they
+            do
+            not arrive on time,
+            then these products become unfit for public consumption and go to waste. This is why if you are in the food
+            business and your products need
+            refrigerated transport, you have to call on experts who take it very seriously.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------Local and long haul------------------------------------------>
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <div class="has-text-centered">
+            <div class="icon">
+              <span style="font-size: 48px; color: rgb(255, 73, 103);">
+                <i class="fas fa-truck"></i>
+              </span>
+            </div>
+
+            <h2 class="title">Local and Long Haul</h2>
+          </div>
+          <p>Although we transport all types of goods, our specialty lies in the cold chain transportation industry.
+            We provide refrigerated trucking and transportation services for temperature sensitive and perishable items
+            such as fresh produce,
+            household goods, and frozen products.
+
+          </p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+
         </div>
 
-<!---------------------------------Local and long haul------------------------------------------>
-        <div class="column">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="has-text-centered" >   
-                            <div class="icon">
-                                 <span style="font-size: 48px; color: rgb(255, 73, 103);"> 
-                                           <i class="fas fa-truck"></i>
-                                       </span>
-                               </div>
-                           
-                        <h2 class="title">Local and Long Haul</h2>
-                      </div>
-                        <p>Although we transport all types of goods, our specialty lies in the cold chain transportation industry. 
-                            We provide refrigerated trucking and transportation services for temperature sensitive and perishable items such as fresh produce, 
-                            household goods, and frozen products.</p>
-                    </div>
-                  
-                </div>
+      </div>
+    </div>
+    <!---------------------------------who we are------------------------------------------>
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <div class="has-text-centered">
+            <div class="icon">
+              <span style="font-size: 48px; color: rgb(255, 73, 103);">
+                <i class="fas fa-id-card"></i>
+              </span>
             </div>
-<!---------------------------------who we are------------------------------------------>
-         <div class="column">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="has-text-centered" >
-                            <div class="icon">
-                                <span style="font-size: 48px; color: rgb(255, 73, 103);">
-                                           <i class="fas fa-id-card"></i>
-                                       </span>
-                               </div>
-                                          <h2 class="title">Who we are</h2>
-                      </div>
-                        <p>At CHN Trucking, we are not just providing you a truck and a driver for your refrigerated transport needs; 
-                            we also help you improve your business’ bottom line by providing you with top quality transportation service. 
-                            We help you streamline your supply chain management by providing you with highly efficient equipment, trucks, and people.</p>
-                    </div>
-                  
-                </div>
+            <h2 class="title">Who we are</h2>
+          </div>
+          <p>At CHN Trucking, we are not just providing you a truck and a driver for your refrigerated transport needs;
+            we also help you improve your business’ bottom line by providing you with top quality transportation
+            service.
+            We help you streamline your supply chain management by providing you with highly efficient equipment,
+            trucks,
+            and people.</p>
+
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---client statistics-->
+  <section class="hero is-dark">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="has-text-centered">
+              <h1 class="title">15</h1>
+              <h2 class="subtitle">Years in service</h2>
             </div>
+          </div>
+
+          <div class="column">
+            <div class="has-text-centered">
+              <h1 class="title">4,378</h1>
+              <h2 class="subtitle">Satisfied Clients</h2>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="has-text-centered">
+              <h1 class="title"> 31,249 </h1>
+              <h2 class="subtitle">Satisfied clients</h2>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Bottom container-->
+ 
+ 
+   <section class="section">
+        <div class="container">
+          <h1 class="title">Your business is <strong>our</strong> business</h1>
+          <h2 class="subtitle">
+              At CHN Trucking inc, we are not just providing you a truck and a driver for your
+              refrigerated transport needs; we also help you improve your business’ bottom line by providing you with
+              top
+              quality transportation service.
+          </h2>
+        </div>
+      </section>
+  
+
+   
+        <section class="section">
+          <div class="container">
+            <h1 class="title">Distribution and Warehousing</h1>
+            <h2 class="subtitle">
+                Our expert staff will provide you with the ideal truck, trailer, driver,
+                and route to make the delivery of your goods more efficient.
+                We utilize Route Optimization software that takes into condition the road, traffic, grade, tolls, scales
+                and many other factors.
+                By avoiding certain roads, hills, commonly backed-up intersections or by traveling at the right time of
+                the
+                day can cause the overall time-to-deliver to be shortened, the per-mile expense to be decreased or the
+                security
+                of the cargo to be increased.
+              </h2>
+          </div>
+        </section>
+
+
+
+
+          <section class="section">
+            <div class="container">
+              <h1 class="title">Route Optimization</h1>
+              <h2 class="subtitle">
+                  Our expert staff will provide you with the ideal truck, trailer, driver,
+                  and route to make the delivery of your goods more efficient.
+                  We utilize Route Optimization software that takes into condition the road, traffic, grade, tolls, scales
+                  and many other factors.
+                  By avoiding certain roads, hills, commonly backed-up intersections or by traveling at the right time of
+                  the
+                  day can cause the overall time-to-deliver to be shortened, the per-mile expense to be decreased or the
+                  security
+                  of the cargo to be increased.
+              </h2>
+            </div>
+          </section>
+
+<!---contact-->
+
+<div class="columns">
+  <div class="column">
+
+
+  
+    
+
+</div>
+
+<div class="column">
+  <section class="section is-small">
+    <div class="container">
+
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="First & Last Name">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left">
+          <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">subject</label>
+        <div class="control has-icons-left">
+          <input class="input" type="email" placeholder="I would like to schedule a pick up">
+          <span class="icon is-small is-left">
+            <i class="fas fa-asterisk"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+
+      <label class="label">Question</label>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="field-label">
+          <!-- Left empty for spacing -->
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     </div> 
+  </section>
+</div>
+<div class="column">
 
-    <section class="hero is-dark">
-          <div class="hero-body">
-              <div class="container">
-                 <div class="columns">
-                    <div class="column">
-                        <div class="has-text-centered">
-                        <h1 class="title">15 years</h1>
-                          <h2 class="subtitle">in service</h2>
-                          </div>
-                        </div>
-
-                    <div class="column"> 
-                        <div class="has-text-centered">
-                      <h1 class="title">4,378</h1>
-                      <h2 class="subtitle">Satisfied Clients</h2>
-                        </div>
-                    </div>
-
-                    <div class="column"> 
-                      <div class="has-text-centered">
-                      <h1 class="title"> 31,249 </h1>
-                      <h2 class="subtitle">Satisfied clients</h2>
-                      </div>
-                    </div>
-
-
-                   </div>
-               </div>             
-           </div>
-     </section>
+  test
+</div>
 
 
 
+</div>
 
+  <!--footer-->
+  <footer class="card-footer">
+    <div class="card-footer-item">
+      <a href="#" class="button">We are hiring</a>
+    </div>
+  </footer>
+</body>
 
-
-
-
-            <footer class="card-footer">
-                <div class="card-footer-item">
-                    <a href="#" class="button">test</a>
-                </div>
-            </footer>
-       </body>
 </html>
